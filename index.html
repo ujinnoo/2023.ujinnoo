@@ -4,29 +4,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2023.ujinnoo</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        #title {
-            margin-top: 15%;
-            text-align: center;
-            color: black;
-            font-weight: bold;
-            font-size: 10vw;
-        }
-        #title a {
-            text-decoration: none;
-            color: black;
-        }
-        #title a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+
 </head>
 <body>
-    <div id="title"><a href="https://www.instagram.com/ujinnoo/">ujinnoo</a><br>
-        <span style="font-size: 2vw; font-weight: 200;">웹사이트 정비 중...</span></div>
+    <header>
+        <div class="logo"><a href="index.html">UJINNOO</a></div>
+        <div class="htext">2023 PORTFOLIO</div>
+        <div id="clock"></div>
+    </header>
+
+    <main>
+        <div class="cursor"></div>
+        <div><img src="./img/stars.gif" alt=""></div>
+        <div class="container">
+            <div id="forder-01" onclick="show1()">
+                <img src="./img/forder.png" alt="">
+                <h3>ABOUT</h3>
+            </div>
+            <div id="forder-02" onclick="show2()">
+                <img src="./img/forder2.png" alt="">
+                <h3>WORK</h3>
+            </div>
+            <div id="forder-03" onclick="show3()">
+                <img src="./img/forder3.png" alt="">
+                <h3>CONTACT</h3>
+            </div>
+        </div>
+        <section id="about">
+            <div class="btn1" onclick="show1()"></div>
+            <div class="btn2"></div>
+            <div class="btn3"></div>
+            <h2>ABOUT</h2>
+            <div class="text">
+                <div class="profile-id">
+                    <h4>Profile</h4>
+                    <img src="./img/profileImg.jpg" alt="">
+                    <ul>
+                        <li>이유진</li>
+                        <li>2001. 06. 12</li>
+                        <li>010-4176-0612</li>
+                        <li>dbwlssn@gmail.com</li>
+                        <li>instagram <a href="https://www.instagram.com/ujinnoo/" target="_blank">@ujinnoo</a></li>
+                        <li>github <a href="https://github.com/ujinnoo" target="_blank">https://github.com/ujinnoo</a></li>
+                    </ul>
+                </div>
+                <div class="about-text">
+                    <h4>Education</h4>
+                    <ul>
+                        <li>- 2018 서울여자고등학교 단편 영화 제작 동아리 부장</li>
+                        <li>- 2020 서울여자고등학교 졸업</li>
+                        <li>- 2022 계원예술대학교 디지털미디어디자인과 학사 입학</li>
+                        <li>- 2022 계원예술대학교 디지털미디어디자인과 부반대표</li>
+                        <li>- 2022 계원예술대학교 디지털미디어디자인과 졸업준비위원회</li>
+                        <li>- 2023 계원예술대학교 디지털미디어디자인과 학생회장</li>
+                        <li>- 2023 계원예술대학교 디지털미디어디자인과 선거관리위원회</li>
+                        <li>- 2024 계원예술대학교 디지털미디어디자인과 졸업 예정</li>
+                    </ul>
+                </div>
+                <div class="about-text">
+                    <h4>Achievement</h4>
+                    <ul>
+                        <li>- 2022 2학기 웹퍼블리싱 연합 PT</li>
+                        <li>- 2023 1학기 프로젝트 스튜디오 연합 PT</li>
+                        <li>- 2023 커뮤니케이션디자인국제공모전 특별상 수상</li>
+                        <li>- 2023 졸업작품 학과 우수작</li>
+                    </ul>
+                </div>
+                <div class="about-text">
+                    <h4>Scholarship</h4>
+                    <ul>
+                        <li>- 2022 1학기 성적 우수 장학생</li>
+                        <li>- 2023 1학기 학생회장 봉사장학금</li>
+                    </ul>
+                </div>
+                <div class="about-text">
+                    <h4>Certificate</h4>
+                    <ul>
+                        <li>- GTQ 포토샵 1급</li>
+                        <li>- 운전면허 1종 보통</li>
+                    </ul>
+                </div>
+                <div class="about-text">
+                    <h4>etc.</h4>
+                    <ul>
+                        <li>- 2015. 1 - 2016. 12 유튜브 활동 구독자수 약 3천명</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        
+        <section id="work">
+            <div class="btn1" onclick="show2()"></div>
+            <div class="btn2"></div>
+            <div class="btn3"></div>
+            <h2>WORK</h2>
+            <div class="text2">
+                <ul>
+                    <li id="buttonA" class="selected2"><img src="./img/noliteo.png" alt=""></li>
+                    <li id="buttonB"><img src="./img/nocanthero.png" alt=""></li>
+                    <li id="buttonC"><img src="./img/theblackskirts.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="work">
+                <div id="contentA" class="noliteo display-block">
+                    <h4>Noli-teo</h4>
+                    <p>“놀이터 Nol-iteo”는 three.js 라이브러리를 기반으로 제작된 어린 시절을<br>
+                        색다르게 추억할 수 있는 메타버스 / 힐링 콘텐츠 팀 프로젝트입니다.</p>
+                        <div class="skill">
+                            <div class="skill1">#HTML</div>
+                            <div class="skill2">#CSS</div>
+                            <div class="skill3">#javascript</div>
+                            <div class="skill4">#three.js</div>
+                        </div>
+                    <a href="https://ujinnoo.github.io/nol-iteo/" target="_blank"><img src="./img/noliteo01.png" alt=""></a>
+                    <a href="https://ujinnoo.github.io/nol-iteo/" target="_blank"><img src="./img/noliteo.png" alt=""></a>
+                    <a href="https://ujinnoo.github.io/nol-iteo/" target="_blank"><img src="./img/noliteo02.png" alt=""></a>
+                    <a href="https://ujinnoo.github.io/nol-iteo/" target="_blank"><img src="./img/noliteo03.png" alt=""></a>
+                    <a href="https://ujinnoo.github.io/nol-iteo/" target="_blank"><img src="./img/noliteo04.png" alt=""></a>
+                </div>
+                <div id="contentB" class="nocanthero display-none">
+                    <h4>노캔히어로</h4>
+                    <p>“노캔히어로” 졸업작품 스튜디오 팀 프로젝트로, 노이즈캔슬링 기기의<br>
+                        경각심을 주기위한 VR 체험 콘텐츠입니다.</p>
+                        <div class="skill">
+                            <div class="skill1">#HTML</div>
+                            <div class="skill2">#CSS</div>
+                            <div class="skill3">#javascript</div>
+                        </div>
+                    <a href="https://ujinnoo.github.io/NoCantHero/" target="_blank"><img src="./img/nocant01.png" alt=""></a>
+                    <a href="https://ujinnoo.github.io/NoCantHero/" target="_blank"><img src="./img/nocant02.png" alt=""></a>
+                    <a href="https://ujinnoo.github.io/NoCantHero/" target="_blank"><img src="./img/nocant03.png" alt=""></a>
+                    <a href="https://ujinnoo.github.io/NoCantHero/" target="_blank"><img src="./img/nocant04.png" alt=""></a>
+                    <a href="https://ujinnoo.github.io/NoCantHero/" target="_blank"><img src="./img/nocant05.png" alt=""></a>
+                </div>
+                <div id="contentC" class="theblackskirts display-none">
+                    <h4>THEBLACKSKIRTS</h4>
+                    <p>“THEBLACKSKIRTS”는 가수 검정치마 관련 여러 정보들을 아카이브한<br>
+                        인터랙티브 웹 콘텐츠입니다.</p>
+                        <div class="skill">
+                            <div class="skill1">#HTML</div>
+                            <div class="skill2">#CSS</div>
+                            <div class="skill3">#javascript</div>
+                        </div>
+                    <a href="https://ujinnoo.github.io/theblackskirts/" target="_blank"><img src="./img/skirt01.png" alt=""></a>
+                    <a href="https://ujinnoo.github.io/theblackskirts/" target="_blank"><img src="./img/skirt02.png" alt=""></a>
+                    <a href="https://ujinnoo.github.io/theblackskirts/" target="_blank"><img src="./img/skirt03.png" alt=""></a>
+                    <a href="https://ujinnoo.github.io/theblackskirts/" target="_blank"><img src="./img/skirt04.png" alt=""></a>
+                    <a href="https://ujinnoo.github.io/theblackskirts/" target="_blank"><img src="./img/skirt05.png" alt=""></a>
+                </div>
+            </div>
+
+        </section>
+        
+        <section id="contact">
+            <div class="btn1" onclick="show3()"></div>
+            <div class="btn2"></div>
+            <div class="btn3"></div>
+            <h2>CONTACT</h2>
+            <ul>
+                <a href="#"><li><img src="./img/profile.png" alt=""><br>자기소개서</li></a>
+                <a href="#"><li><img src="./img/docu.png" alt=""><br>이력서</li></a>
+                <a href="https://www.instagram.com/ujinnoo/" target="_blank"><li><img src="./img/insta.png" alt=""><br>instagram</li></a>
+                <a href="https://github.com/ujinnoo" target="_blank"><li><img src="./img/github.png" alt=""><br>github</li></a>
+            </ul>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        Copyright ⓒ 2023 ujinnoo, All Right Reserved.
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/draggabilly/3.0.0/draggabilly.pkgd.min.js"></script>
+    <script src="./js/forder.js"></script>
+    <script src="./js/drag.js"></script>
+    <script src="./js/date.js"></script>
+    <script src="./js/mouse.js"></script>
+    <script src="./js/work.js"></script>
+    
 </body>
 </html>

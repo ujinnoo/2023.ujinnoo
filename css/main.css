@@ -1,0 +1,357 @@
+* {
+    cursor: none;
+}
+body {
+    background: #F5F5F5;
+    color: #656565;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+a {
+    cursor: none;
+}
+.logo {
+    display: inline-block;
+    margin: 1vw 0 0 1vw;
+    font-weight: 900;
+}
+.logo a {
+    color: #656565;
+    text-decoration: none;
+}
+.htext {
+    display: inline-block;
+    position: absolute;
+    top: 1vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 900;
+}
+/* 시계 */
+#clock {
+    float: right;
+    margin: 1vw 1vw 0 0;
+    font-weight: 500;
+}
+
+/* forder */
+main .container img {
+    width: 15vw;
+}
+.container {
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container h3 {
+    margin-top: 1vw;
+    text-align: center;
+}
+#forder-01 {
+    display: inline-block;
+    padding: 2vw;
+}
+#forder-02 {
+    display: inline-block;
+    padding: 2vw;
+}
+#forder-03 {
+    display: inline-block;
+    padding: 2vw;
+}
+#forder-01:hover {
+    background: #e9e9e9;
+    padding: 2vw;
+    border-radius: 10%;
+}
+#forder-02:hover {
+    background: #e9e9e9;
+    padding: 2vw;
+    border-radius: 10%;
+}
+#forder-03:hover {
+    background: #e9e9e9;
+    padding: 2vw;
+    border-radius: 10%;
+}
+.selected {
+    background: #e9e9e9;
+    padding: 2vw;
+    border-radius: 10%;
+}
+
+::-webkit-scrollbar{width: 7px;}
+::-webkit-scrollbar-track {background-color:#ffffff00;border-radius: 10px;}
+::-webkit-scrollbar-thumb {background-color:#888;border-radius: 10px;}
+
+/* ABOUT section pop up */
+#about {
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+    display: none;
+    background: #fff;
+    border-radius: 10px;
+    border-top: 3vw solid #f1f1f1;
+    box-shadow: 0 10px 30px rgba(98, 98, 98, 0.5);
+    width: 35vw;
+    height: 30vw;
+    z-index: 1;
+}
+.text {
+    overflow-y: scroll;
+    width: 31.9vw;
+    height: 26vw;
+    padding: 2vw 0 1.5vw 3vw;
+    color: #272727;
+}
+#about .text img {
+    width: 10vw;
+    border: solid 1px #6b5669;
+}
+#about h4 {
+    font-size: 3vw;
+    margin-bottom: 1vw;
+}
+.profile-id ul{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-size: 1vw;
+    margin-left: 2vw;
+}
+.profile-id li {
+    padding: 0.5vw 0;
+}
+#about li a {
+    color: #272727;
+}
+.about-text {
+    position: relative;
+    margin-top: 4vw;
+    font-size: 1vw;
+}
+.about-text h4 {
+    margin-bottom: 1vw;
+}
+.about-text li {
+    line-height: 2;
+}
+
+
+/* WORK section pop up */
+#work {
+    position: absolute;
+    top: 10vw;
+    left: 20vw;
+    display: none;
+    background: #fff;
+    border-radius: 10px;
+    border-top: 3vw solid #f1f1f1;
+    box-shadow: 0 10px 30px rgba(98, 98, 98, 0.5);
+    width: 55vw;
+    height: 35vw;
+    z-index: 2;
+}
+.text2 {
+    display: inline-block;
+    width: 17.6vw;
+    height: 26vw;
+    padding: 2vw 0 1.5vw 2vw;
+    color: #272727;
+}
+.text2 li {
+    text-align: center;
+    padding: 1vw;
+    /* margin: 1vw; */
+}
+.text2 img {
+    width: 90%;
+}
+.selected2 {
+    text-align: center;
+    padding: 2vw;
+    border-radius: 5px;
+    background: #a8a8a8;
+}
+.work {
+    overflow-y: scroll;
+    vertical-align: top;
+    margin: 2vw 0 0 4vw;
+    display: inline-block;
+    width: 31vw;
+    height: 30vw;
+    color: #272727;
+}
+.work img {
+    margin-top: 1vw;
+    width: 95%;
+}
+.work h4 {
+    font-size: 2vw;
+}
+.work p {
+    margin-top: 1vw;
+    line-height: 1.5;
+}
+.skill {
+    margin-top: 1vw;
+    font-size: 0.6vw;
+}
+.skill1 {
+    display: inline-block;
+    border: 1px solid #ff7d4e;
+    border-radius: 100px;
+    width: max-content;
+    padding: 0.2vw 1vw;
+    color: #ff7d4e;
+}
+.skill2 {
+    display: inline-block;
+    border: 1px solid #6f6fff;
+    border-radius: 100px;
+    width: max-content;
+    padding: 0.2vw 1vw;
+    margin-left: 0.5vw;
+    color: #6f6fff;
+}
+.skill3 {
+    display: inline-block;
+    border: 1px solid #ffcd28;
+    border-radius: 100px;
+    width: max-content;
+    padding: 0.2vw 1vw;
+    margin-left: 0.5vw;
+    color: #ffcd28;
+}
+.skill4 {
+    display: inline-block;
+    border: 1px solid #37eb4c;
+    border-radius: 100px;
+    width: max-content;
+    padding: 0.2vw 1vw;
+    margin-left: 0.5vw;
+    color: #37eb4c;
+}
+.display-none {
+    display: none;
+}
+.display-block {
+    display: block;
+}
+
+/* CONTACT section pop up */
+#contact {
+    position: absolute;
+    top: 5vw;
+    left: 50vw;
+    display: none;
+    background: #fff;
+    border-radius: 10px;
+    border-top: 3vw solid #f1f1f1;
+    box-shadow: 0 10px 30px rgba(98, 98, 98, 0.5);
+    width: 35vw;
+    height: 10vw;
+    z-index: 3;
+}
+#contact li {
+    display: inline-block;
+    margin: 1vw 0 0 1vw;
+    padding: 0 1vw;
+    line-height: 1.6;
+    font-size: 0.8em;
+    color: #272727;
+    text-align: center;
+}
+#contact li img {
+    width: 3vw;
+}
+
+/* 폴더 팝업창 버튼 */
+.btn1 {
+    position: absolute;
+    top: -1.8vw;
+    left: 1vw;
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50%;
+    background: #FE5F57;
+}
+.btn2 {
+    position: absolute;
+    top: -1.8vw;
+    left: 2.3vw;
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50%;
+    background: #FFBC2F;
+}
+.btn3 {
+    position: absolute;
+    top: -1.8vw;
+    left: 3.6vw;
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50%;
+    background: #28C840;
+}
+
+main h2 {
+    position: absolute;
+    top: -1.9vw;
+    left: 6vw;
+    color: #656565;
+    font-weight: 900;
+}
+
+footer {
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    font-weight: 900;
+    color: #d1d1d1;
+}
+
+/* work 이미지 호버시 마우스 커서 변경 */
+.cursor {
+    position: absolute;
+    background: #272727;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+        0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    transform: scale(1);
+    z-index: 10;
+}
+
+.cursor::before {
+    content: "visit website";
+    background-color: #272727;
+    color: #fff;
+    font-size: 1.5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100%;
+    opacity: 0;
+    z-index: 10;
+}
+
+.cursor.active {
+    opacity: 1;
+    transform: scale(10);
+    z-index: 10;
+}
+
+.cursor.active::before {
+    opacity: 1;
+    z-index: 10;
+}
